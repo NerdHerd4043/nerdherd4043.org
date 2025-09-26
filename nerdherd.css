@@ -1,0 +1,1017 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+
+/*do not muck about with*/
+
+body {
+
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+}
+
+body a {
+    text-decoration: none;
+}
+
+body a:hover {
+    border-bottom: 1px solid #73AD21;
+}
+
+body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */    
+}
+
+html {
+    min-height: 100%;
+}
+
+/*mucking about can start here*/
+
+/* Header Stuffeths */
+
+div.relative {
+    background-image: url(https://www.veronicamcintyre.com/testing/images/cow.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    border-bottom: 25px solid #213D63;
+    width: 100%;
+    height: 90px;
+    z-index: 2;
+} 
+
+div.logo {
+    position: relative;
+    float: center;
+    text-align: center;
+    top: 10%; 
+    min-width: 60%;
+    max-width: 125%;
+    align: middle;
+    z-index: 1;
+}
+
+/* Navigation Stuffeths */
+
+.navbar {
+    height: 50px;
+    background-color: #213D63; /* ##D41414  */
+    box-shadow: 0px 5px 5px -4px #000000;
+    z-index: 2;
+}
+
+.nav {
+    list-style-type: none;
+    text-align:center;
+}
+
+.nav li {
+    background-color: #213D63;
+    display:inline;
+}
+
+.nav a {
+    display:inline-block;
+    color: #F0F0F0;
+    text-align: center;
+    border-bottom: 3px solid transparent;
+}
+
+.nav a:hover {
+    color: #A2A2A2;
+    border-bottom: 3px solid #73AD21;
+}
+.nav a:active {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0;
+    overflow: hidden;
+	text-align:center;
+	border-bottom: 3px solid #73AD21;
+}
+
+.navbar-toggler-icon {
+    padding: -10px 0px 0px 0px!important;
+    width: 15px!important;
+    z-index: 4;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border-radius: 0!important;
+    background-color: #213D63!important; 
+    box-shadow: none;
+    height: 30px!important;   
+    vertical-align: top;
+}
+
+.bg-blue {
+    background-color: #213D63;
+    border-radius: 0!important;
+    border-color: #213D63!important;
+ }
+
+button:focus {
+    border-color: transparent !important;
+    border-radius: 0!important;
+    outline: none;
+    outline: none -webkit-focusring-color;
+    height: 10px!important;
+
+}
+
+
+
+
+
+/* text styles */
+
+.copyright {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 0.8333em;
+    color:#ADADAD;
+    text-decoration: none;
+    top-padding: 5%;
+    margin-top: .3%;
+}
+ 
+.copyright a {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 0.9em;
+    color:#ADADAD;
+    text-decoration: none;
+    top-padding: .2%;
+}
+
+.copyright a:hover {
+    border-bottom: 1px solid #73AD21;
+}
+
+.superscript {
+    vertical-align: super;
+    font-size: .5em;
+}
+
+.navtext {
+    font-family: 'Oxanium';
+    font-weight: 700;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Oxanium';
+    font-weight: 700;
+    font-size: 2em;
+    color:#000000;
+}
+
+h1 a {
+    color: #213D63;
+}
+
+h1 a:hover {
+     border-bottom: 3px solid #73AD21;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Oxanium';
+    font-weight: 400;
+    font-size: 1.5em;
+    color:#000000;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Oxanium';
+    font-weight: 400;
+    font-size: 1em;
+    color:#000000;
+}
+
+h4 {
+    text-align: center;
+    font-family: 'Oxanium';
+    font-weight: 600;
+    font-size: 1.75em;
+    color:#000000;
+}
+
+h5 {
+    text-align: center;
+    font-family: 'Oxanium';
+    font-weight: 700;
+    font-size: 1.5em;
+    color:#000000;
+}
+
+h5 a {
+    color: #213D63;
+}
+
+h5 a:hover {
+     border-bottom: 3px solid #73AD21;
+}
+
+h6 {
+    text-align: center;
+    font-family: 'Ubuntu', 'sans serif';
+    font-weight: 500;
+    font-size: 1.15em;
+    color:#000000;
+}
+
+h7 {
+    text-align: left;
+    font-family: 'Oxanium';
+    font-weight: 500;
+    font-size: 1em;
+    color:#000000;
+}
+
+h8 {
+    text-align: center;
+    font-family: 'Oxanium';
+    font-weight: 700;
+    font-size: 2.5em;
+    color:#000000;
+}
+
+h9 {
+    text-align: center;
+    font-family: 'Ubuntu', 'sans serif';
+    font-weight: 700;
+    font-size: 1.5em;
+    color:#000000;
+}
+
+h17 {
+    text-align: center;
+    align-content: center;
+    font-family: 'Rubik Dirt';
+    font-weight: 400;
+    font-size: 3em;
+    color:#213D63;
+}
+
+h18 {
+    text-align: center;
+    align-content: center;
+    font-family: 'Rubik Wet Paint';
+    font-weight: 400;
+    font-size: 3em;
+    color:#213D63;
+}
+
+h19 {
+    text-align: center;
+    align-content: center;
+    font-family: 'Rubik Marker Hatch';
+    font-weight: 400;
+    font-size: 3em;
+    color:#213D63;
+}
+
+h20 {
+    text-align: center;
+    align-content: center;
+    font-family: 'Rubik Microbe';
+    font-weight: 400;
+    font-size: 3em;
+    color:#213D63;
+}
+
+h21 {
+    text-align: center;
+    align-content: center;
+    font-family: 'Rubik Glitch';
+    font-weight: 400;
+    font-size: 3em;
+    color:#213D63;
+}
+
+h22 {
+    text-align: center;
+    align-content: center;
+    font-family: 'Rubik Distressed';
+    font-weight: 400;
+    font-size: 3em;
+    color:#213D63;
+}
+
+h23 {
+    text-align: center;
+    align-content: center;
+    font-family: 'Frijole';
+    font-weight: 400;
+    font-size: 3em;
+    color:#213D63;
+}
+
+h24 {
+    text-align: center;
+    align-content: center;
+    font-family: 'Rubik Moonrocks';
+    font-weight: 400;
+    font-size: 3em;
+    color:#213D63;
+}
+
+h25 {
+    text-align: center;
+    align-content: center;
+    font-family: 'Rubik Doodle Shadow';
+    font-weight: 400;
+    font-size: 3em;
+    color:#213D63;
+}
+
+hq {
+    text-align: center;
+    font-family: 'Oxanium';
+    font-weight: 700;
+    font-size: 1em;
+    color:#000000;
+}
+
+hq a {
+    color: #213D63;
+}
+
+hq a:hover {
+     border-bottom: 2px solid #73AD21;
+}
+
+
+
+p {
+    text-align: justify;
+    font-family: 'Ubuntu', 'sans serif';
+    font-weight:400;
+    font-size: 1em;
+    text-justify: inter-word;
+}
+
+.annual {
+    text-align: center;
+    align-content: center;
+}
+
+.caption {
+    bottom: 0px;
+    font-family: 'Oxanium';
+	font-size: .75em;
+	font-weight: 500;
+	color: #636262;
+    height: 25px;
+}
+
+/*Changing font size and color of TITLE*/
+.lb-data .lb-caption {
+    font-family: 'Oxanium'!important;
+	font-size: 1em!important;
+	font-weight: 500!important;
+	color: #A09F9F;
+}
+
+/*Changing font size and color of CAPTION*/
+.lb-data .lb-caption a{
+    text-decoration: none!important;
+    text-decoration-line: none;
+    text-decoration-color: transparent;
+}
+
+.link {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: #213D63;
+}
+
+.link a {
+    color: #73AD21;
+}
+
+.link a:hover {
+    border-bottom: 2px solid #73AD21;
+}
+
+.paragraph2 {
+    font-family: 'Oxanium';
+	font-size: 1.5em;
+	font-weight: 700;
+	color: #000000;
+	text-decoration: none;
+    text-align: center;  
+}
+
+.cowbell {
+    font-family: 'Oxanium';
+	font-size: .95em;
+	font-weight: 500;
+	color: #000000;
+}
+
+
+/* Image Mucking About */
+.floatright {
+    float: right;
+    margin: 0 0 15px 15px;
+    font-family: 'Oxanium';
+	font-size: .75em;
+	font-weight: 500;
+	color: #636262;
+    word-wrap: normal;
+}
+
+.floatleft {
+    float: left;
+    margin: 0 15px 0px 0px;
+    font-family: 'Oxanium';
+	font-size: .75em;
+	font-weight: 500;
+	color: #636262;
+    word-wrap: inherit;
+}
+
+/* Hover over tooltip */
+span {
+    position: relative;
+    display:inline-block;
+}
+
+span:hover::after {
+    content: attr(data-title);
+    padding: 0px 2px;
+    border: 1px solid #213D63;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    background: white;
+    color: black;
+    font-size: .75em;
+    opacity: 75%;
+        }
+
+.gal-item{
+	overflow: hidden;
+	padding: 8px;
+}
+.gal-item .box{
+	height: 100%;
+	overflow: hidden;
+}
+.box img{
+	height: 100%;
+	width: auto;
+	object-fit:cover;
+}
+
+input {
+    margin: 0.4rem;
+}
+
+.container-image {
+    float: center;
+    max-width: 50%;
+    position: relative;
+    color: transparent;
+}
+
+/* Event Card Stuff */
+
+.event {
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    min-width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 4px 5px 5px 0px #686868;
+    margin: 20px;
+
+}
+
+.event-profile-img {
+    height: 80%;
+    object-position: center top;    
+}
+
+.event-description-bk {
+    background-image: linear-gradient(0deg, #517A16, #B6D78A);
+    border-radius: 20px;
+    position: absolute;
+    top: 55%;
+    left: -5px;
+    height: 65%;
+    width: 108%;
+    transform: skew(19deg, -9deg);
+}
+
+.blue .event-description-bk {
+    background-image: linear-gradient(-20deg, #213D63, #a5bddd)
+}
+
+.event-logo {
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #73AD21;
+    background-color: #FFFFFF;
+    position: absolute;
+    padding: 1%;
+    bottom: 30%;
+    left: 30px;
+    overflow: hidden;
+    box-shadow: 4px 5px 5px 0px #686868;
+}
+
+.event-logo img {
+    height: 100%;
+    background-color: transparent;
+}
+
+.event-description {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-weight: 500;
+    font-size: .83em;
+    position: absolute;
+    color: #FFFFFF;
+    right: 8px;
+    left: 113px;
+    bottom: 15%;
+}
+
+.event-btn {
+    font-family: 'Oxanium';
+    font-weight: 700;
+    font-size: 1.05em;
+    text-decoration: none;
+    position: absolute;
+    color: #FFFFFF;
+    right: 30px;
+    bottom: 6%;
+    padding: 3px 7px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    border-style: outset;
+}
+
+.event-btn a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.event-btn a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+    border-bottom: 2px solid #73AD21;
+}
+
+.event-date {
+    font-family: 'Oxanium';
+    font-weight: 700;
+    font-size: 1.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: absolute;
+    color: #FFFFFF;
+    left: 30px;
+    bottom: 2%;
+}
+
+.main {
+    text-align: center;
+}
+
+/* Sponsor Card Stuffeths */
+
+.sponsor {
+    display: inline-block;
+    position: relative;
+    width: 250px;
+    min-width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 4px 5px 5px 0px #686868;
+    margin: 50px 20px 20px 20px;
+}
+
+.sponsor-profile-img {
+    height: 80%;
+    object-position: center top;    
+}
+
+.sponsor-description-bk {
+    border-radius: 20px;
+    position: absolute;
+    top: 55%;
+    left: -5px;
+    height: 65%;
+    width: 108%;
+    transform: skew(19deg, -9deg);
+}
+
+.shiny .sponsor-description-bk {
+    background-image: url("images/iridescent.svg");
+    background-size: cover;    
+}
+
+.platinum .sponsor-description-bk {
+    background-image: linear-gradient(-20deg, #656480, #c5c4d3, #656480);
+}
+
+.gold .sponsor-description-bk {
+    background-image: linear-gradient(-20deg, #5d4a1f, #FDB931, #5d4a1f);
+}
+
+.silver .sponsor-description-bk {
+    background-image: linear-gradient(-20deg, #383838, #a9a9a9, #383838);
+}
+
+.bronze .sponsor-description-bk {
+    background-image: linear-gradient(-20deg, #714414, #d29b5f, #714414);
+}
+
+.carbonfiber .sponsor-description-bk {
+    background-image: url("images/carbon-fiber.png");
+    background-size: cover;    
+}
+
+.sponsor-logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    background-color: #FFFFFF;
+    position: absolute;
+    padding: 1px;
+    bottom: 30%;
+    left: 30px;
+    overflow: hidden;
+}
+
+.shiny .sponsor-logo {
+    border-color: #0F1473;
+    box-shadow: 4px 5px 5px 0px rgba(8, 10, 59, 0.65);
+}
+
+.platinum .sponsor-logo {
+    border-color: #464568;
+    box-shadow: 4px 5px 5px 0px #464568;
+}
+
+.gold .sponsor-logo {
+    border-color: #57410E;
+    box-shadow: 4px 5px 5px 0px #57410E;
+}
+
+.silver .sponsor-logo {
+    border-color: #585858;
+    box-shadow: 4px 5px 5px 0px #585858;
+}
+
+.bronze .sponsor-logo {
+    border-color: #714414;
+    box-shadow: 4px 5px 5px 0px #4E2E0A;
+}
+
+.sponsor-logo img {
+    height: 100%;
+    background-color: transparent;
+}
+
+.sponsor-description {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-weight: 800;
+    font-size: .85em;
+    position: absolute;
+    color: #FFFFFF;
+    right: 8px;
+    left: 100px;
+    bottom: 25%;
+}
+
+.shiny .sponsor-description {
+    color: #270E70;
+}
+
+.sponsor-btn {
+    font-family: 'Oxanium';
+    font-weight: 700;
+    font-size: 1em;
+    text-decoration: none;
+    position: absolute;
+    color: #FFFFFF;
+    right: 30px;
+    bottom: 6%;
+    padding: 3px 7px;
+    border-radius: 10px;
+    border-style: outset;
+}
+
+.shiny .sponsor-btn {
+    border: 3px outset #0F1473;
+    color: #270E70 !important;
+}
+
+.platinum .sponsor-btn {
+    border: 3px outset #464568;
+}
+
+.gold .sponsor-btn {
+    border: 3px outset #5d4a1f;
+}
+
+.silver .sponsor-btn {
+    border: 3px outset #585858;
+}
+
+.bronze .sponsor-btn {
+    border: 3px outset #714414;
+}
+
+.carbonfiber .sponsor-btn {
+    border: 3px outset #3A3939;
+}
+
+.sponsor-btn a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.shiny .sponsor-btn a {
+    color: #0F1473;
+}
+
+.shiny .sponsor-btn a:hover {
+    color: #270E70;
+    text-decoration: none;
+    border-bottom: 2px solid #73AD21;
+}
+
+.sponsor-btn a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+    border-bottom: 2px solid #73AD21;
+}
+
+.sponsor-level {
+    font-family: 'Oxanium';
+    font-weight: 700;
+    font-size: .75em;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: absolute;
+    color: #FFFFFF;
+    left: 30px;
+    bottom: 2%;
+}
+
+.shiny .sponsor-level {
+    color: #270E70;
+}
+
+/* Years */
+.btn-years {
+    color: #FFFFFF;
+    padding: 0px 3px;
+    border: 3px solid #213D63;
+    border-radius: 18px;
+}
+
+.btn-years a:hover {
+    border-bottom: none;
+    color: #73AD21;
+}
+
+.year2017 {
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 3em;
+    color: #000000;
+    text-decoration: none;
+}
+
+.year2018 {
+    font-family: 'Rubik Wet Paint', cursive;
+    font-size: 3em;
+    color: #000000;
+    text-decoration: none;
+}
+
+.year2019 {
+    font-family: 'Rubik Marker Hatch', cursive;
+    font-size: 3em;
+    color: #000000;
+    text-decoration: none;
+}
+
+.year2020 {
+    font-family: 'Rubik Microbe', cursive;
+    font-size: 3em;
+    color: #000000;
+    text-decoration: none;
+}
+
+.year2021 {
+    font-family: 'Rubik Glitch', cursive;
+    font-size: 3em;
+    color: #000000;
+    text-decoration: none;
+}
+
+.year2022 {
+    font-family: 'Rubik Distressed', cursive;
+    font-size: 3em;
+    color: #000000;
+    text-decoration: none;
+}
+
+.year2023 {
+    font-family: 'Frijole', cursive;
+    font-size: 3em;
+    color: #000000;
+    text-decoration: none;
+}
+
+.year2024 {
+    font-family: 'Rubik Moonrocks', cursive;
+    font-size: 3em;
+    color: #000000;
+    text-decoration: none;
+}
+
+.year2025 {
+    font-family: 'Rubik Doodle Shadow', cursive;
+    font-size: 3em;
+    color: #000000;
+    text-decoration: none;
+}
+
+
+/* Content of Pages */
+
+.content {
+    min-width: 85%;
+}
+
+.edge {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.join {
+
+    min-width: 90%;
+}
+
+.shift {
+    margin-left: 5px;
+}
+
+.btn {
+    background-color: #73AD21;
+    border-color: transparent;
+    transition: all .7s;
+    padding: 0 0 0 0;
+}
+
+.horns {
+    width: 65px!important;
+}
+
+.btn:hover {
+    color: #73AD21;
+    background-color: #dffdb4;
+    border-color: #73AD21;
+}
+
+.spacing {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.inputfield {
+    height: 18px;
+    width: 150px;
+}
+
+.hoof {
+    padding-top: .125em;
+}
+
+.tail {
+    padding-bottom: .125em;
+}
+
+
+
+/* Image Mucking About */
+
+img .captioned {
+    z-index: 0;
+}
+
+img.left { 
+	float: left;
+    margin: 0px 15px 15px 0px;	
+}
+
+img.right { 
+	float: right;
+    margin: 0px 0px 15px 15px;	
+}
+
+img.center { 
+	float: center;
+    margin: 0px 15px 15px 5px;	
+}
+
+/* Gallery mucking about */
+
+.caption-text {
+    font-family: 'Oxanium'!important;
+	font-size: .5em!important;
+	font-weight: 300!important;
+	text-decoration: none!important;
+    color:#A29F9F!important;
+}
+
+/* Carousel Stuffeths */
+
+.carousel {
+    max-width: 85%;
+    box-shadow: 4px 5px 5px 0px #686868;
+    min-height: 50px;
+}
+
+.carousel .carousel-indicators li {
+   width: 10px;
+   height: 10px;
+   border-radius: 100%;
+ }
+
+/* Custom style to prevent carousel from being distorted if for some reason image doesn't load */
+.carousel-item{
+    min-height: 50px;
+}
+
+
+/* Make Footer Sticky */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    padding-top: .3%;
+    margin-top: -0.25rem !important;
+    background-color: #000000;
+    z-index: 2;
+}
+
+.footer-link {
+    font-family: 'Oxanium';
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color:#DDDDDD;  
+    display: inline;
+    vertical-align: middle;
+}
+
+
+
+
