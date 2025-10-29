@@ -1020,6 +1020,8 @@ img.center {
     vertical-align: middle;
 }
 
-
+.centered {
+  text-align: center;
+}
 
 
