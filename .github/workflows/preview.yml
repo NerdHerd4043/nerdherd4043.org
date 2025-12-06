@@ -4,9 +4,10 @@ on:
   pull_request:
     types:
       - opened
-      - reopened
       - synchronize
-      - closed
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 concurrency: preview-${{ github.ref }}
 
@@ -17,9 +18,25 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
+          fetch-depth: 0
           lfs: true
 
-      - name: Deploy preview
-        uses: rossjrw/pr-preview-action@v1
+      - name: Upload to Remote Server
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          rsync -acv --delete --chmod=ug=rwX \
+            -e "ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_ed25519" \
+            ./website/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/srv/http/preview.nerdherd4043.org/
+
+      - uses: actions/github-script@v8
+        name: Comment on PR
         with:
-          source-dir: ./website/
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: 'Preview site live at: <https://preview.nerdherd4043.org/>'
+            })
