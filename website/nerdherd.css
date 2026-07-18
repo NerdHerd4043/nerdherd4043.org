@@ -552,6 +552,14 @@ input {
     box-shadow: 4px 5px 5px 0px #686868;
 }
 
+.avatar-blue {
+    background-color: #0066b3;
+}
+
+.avatar-red {
+    background-color: #ed1c24;
+}
+
 .event-logo img {
     height: 100%;
     background-color: transparent;
@@ -1012,6 +1020,8 @@ img.center {
     vertical-align: middle;
 }
 
-
+.centered {
+  text-align: center;
+}
 
 
